@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pachira</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/build/tailwind.css">
+  <link rel="stylesheet" href="/build/plp-style.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap">
+</head>
+
+<body id="lpFaqPage">
+  <header id="pageHeader"></header>
+
+  <!-- FAQ Title - Start -->
+  <div class="py-16 text-center text-white bg-cover" style="background-image: url(images/faq-piggy-bank.jpg);">
+    <div class="text-2xl font-extrabold">FAQ</div>
+  </div>
+  <!-- FAQ Title - End -->
+
+  <!-- How can we help - Start -->
+  <div class="pt-12 text-center text-black bg-cover">
+    <div class="text-2xl font-extrabold">How can we help?</div>
+  </div>
+  <!-- How can we help - End -->
+  
+  <!-- FAQ Section - Start -->
+  <div class="text-left mt-6">
+      <div class="hidden sticky top-0 sm:block sm:w-48 text-sm font-semibold bg-brand-gray" id="faq-side-pane">
+        <a href="#new_users"><div class="pl-10 py-6 hover:bg-brand-green hover:text-white border-white border-b-2">NEW USERS</div></a>
+        <a href="#make_impact"><div class="pl-10 py-6 hover:bg-brand-green hover:text-white border-white border-b-2">MAKE IMPACT</div></a>
+        <a href="#partnership"><div class="pl-10 py-6 hover:bg-brand-green hover:text-white border-white border-b-2">PARTNERSHIP</div></a>
+        <a href="#charities"><div class="pl-10 py-6 hover:bg-brand-green hover:text-white border-white border-b-2">CHARITIES</div></a>
+        <a href="#track_impact"><div class="pl-10 py-6 hover:bg-brand-green hover:text-white border-white border-b-2">TRACK IMPACT</div></a>
+        <a href="#account"><div class="pl-10 py-6 hover:bg-brand-green hover:text-white border-white border-b-2">ACCOUNT</div></a>
+        <a href="#about_pachira"><div class="pl-10 py-6 hover:bg-brand-green hover:text-white border-white border-b-2">ABOUT PACHIRA</div></a>
+      </div>
+      <!-- Template for Q&A Category Title -->
+      <template id="qna-category-title-template">
+        <div class="w-11/12 pt-5 text-xl font-semibold qna-category-title"></div>
+      </template>
+      <!-- Template for a question and an answer -->
+      <template id="question-and-answer-template">
+        <div class="py-8 border-gray-200 border-b-2 flex flex-wrap justify-between faq-item-container">
+          <div class="w-11/12 faq-question"></div>
+          <div>
+            <img class="w-4 filter-brand-green cursor-pointer faq-show-answer" src="images/faq-plus.svg">
+            <img class="hidden w-4 filter-brand-green cursor-pointer faq-hide-answer" src="images/faq-close.svg">
+          </div>       
+          <div class="mt-3 pr-4 font-normal faq-answer"></div>
+        </div>
+      </template>
+      <div class="w-full sm:ml-48 sm:w-3/4 lg:w-4/5 px-12 text-sm font-semibold" id="qAndAList">
+        <!-- Function addFaq() fills the content -->
+      </div>   
+  </div>
+  <!-- FAQ Section - End -->
+
+  <footer id="pageFooter"></footer>
+
+  <script type="text/javascript" src="scripts/lp.js"></script>
+</body>
+</html>

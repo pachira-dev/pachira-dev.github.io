@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pachira</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/build/tailwind.css">
+  <link rel="stylesheet" href="/build/plp-style.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap">
+</head>
+
+<body id="lpChallengePage">
+  <header id="pageHeader"></header>
+
+  <!-- Challenge Title - Start -->
+  <div class="py-10 text-center text-brand-green text-2xl font-extrabold">
+    <p>PACHIRA SOCIAL ENTERPRISE</p>
+    <p>WIN YOUR INTERNSHIP CHALLENGE</p>
+  </div>
+  <!-- Challenge Title - End -->
+
+  <!-- Challenge Form - Start -->
+  <form class="px-12 pb-10 m-auto text-left font-normal lg:w-2/3 xl:w-1/2">
+    <p>Want to intern with us? We don’t want resumes; we want your creativity.</p><br>
+    <p>Pachira empowers giving. Our mission is to enable you to create impact in your communities, your world. We want to hear from you what that impact would be - what cause, social initiative, or charity? Then tell us what you would do to create that impact.</p><br>
+    <p>The challenge is to use your imagination and creativity (no limits, no boundaries to your vision)! Be creative, Make Impact!</p><br>
+    <p>Submission can be provided in a format of your choosing: a short video clip, an info-graphic, an interactive website, a newsletter - whatever format works best for you to showcase your creativity.</p><br>
+    <p class="font-semibold">Submission must be received by February 5, 2020 4:00pm (MT) to be selected for next step of the process: Instagram "likes" voting during Feb. 7-Feb. 21, 2021. Instagram "likes" (counts) will be determined using Hootesuite Analytics & Reporting and made available upon request. Winners announced March 2, 2021.</p><br>
+    <p>1. What is your social initiative or cause? What impact do you want to create in your community or the world? (Can be an existing or non-existing charity, not-for-profit organisations or social projects.)</p>
+    <textarea id="challenge-q1" name="challenge-q1" class="mt-2 h-24 bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-2 block w-full appearance-none leading-normal" placeholder="Type your answer here." wrap="soft"></textarea><br>
+    <p>2. Why is the cause, social initiative or charity important to you?</p>
+    <textarea id="challenge-q2" name="challenge-q2" class="mt-2 h-24 bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-2 block w-full appearance-none leading-normal" placeholder="Type your answer here." wrap="soft"></textarea><br>
+    <p>3. How will you make it happen, how would you support it, or how would you solve the social issue/cause. Your creativity in this section is the only determining criteria in our selection and in awarding the internship. Please email your attachment to <a href="mailto:info@pachira.ca" class="text-blue-600">info@pachira.ca</a> or provide link to your creative solution(s), below.</p>
+    <textarea id="challenge-q3" name="challenge-q3" class="mt-2 h-48 bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-2 block w-full appearance-none leading-normal" placeholder="Type the link of a short video clip, an info-graphic, an interactive website, a newsletter - whatever format works best for you here." wrap="soft"></textarea><br>
+    <label>Your name:</label>
+    <input id="challenge-name" name="challenge-name" class="mt-2 bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal" type="text" placeholder="Name"><br>
+    <label>Your Email address:</label>
+    <input id="challenge-email" name="challenge-email" class="mt-2 bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal" type="email" placeholder="Email"><br>
+    <div>
+      <p id="challenge-submit" onclick="submitChallengeResponse()" class="px-6 py-2 inline-block text-xs font-semibold rounded-md text-white bg-brand-green">SUBMIT</p>
+      <p id="form-validation-error" class="px-2 inline-block text-red-500"></p>
+      <p id="form-submission-success" class="px-2 inline-block text-black"></p>
+    </div><br>
+    <p>You can submit your response by clicking the "SUBMIT" button above or email to <a href="mailto:info@pachira.ca" class="text-blue-600">info@pachira.ca</a> (subject: Internship Challenge).</p><br>
+  </form>  
+  <!-- Challenge Form - End -->
+
+  <footer id="pageFooter"></footer>
+
+  <script type="text/javascript" src="scripts/lp.js"></script>
+</body>
+</html>

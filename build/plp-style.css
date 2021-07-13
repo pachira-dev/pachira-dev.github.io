@@ -1,0 +1,71 @@
+/* Responsive Youtube Window */
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.iframe-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Text Shadow */
+.text-shadow-effect {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.filter-brand-green {
+  filter: invert(43%) sepia(92%) saturate(403%) hue-rotate(92deg) brightness(91%) contrast(106%);
+}
+
+.filter-brand-gray {
+  filter: invert(99%) sepia(100%) saturate(7%) hue-rotate(310deg) brightness(103%) contrast(95%);
+}
+
+.filter-brand-dark-gary {
+  filter: invert(44%) sepia(1%) saturate(1738%) hue-rotate(131deg) brightness(100%) contrast(91%);
+}
+
+.filter-brand-black {
+  filter: invert(0%) sepia(12%) saturate(461%) hue-rotate(330deg) brightness(90%) contrast(88%);
+}
+
+.filter-brand-spring {
+  filter: invert(97%) sepia(9%) saturate(2077%) hue-rotate(14deg) brightness(90%) contrast(76%);
+}
+
+/* Crop image and center it to fit the container */
+.crop-n-center-img {
+  position: absolute;
+  left: -1000%;
+  right: -1000%;
+  top: -1000%;
+  bottom: -1000%;
+  margin: auto;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+/* Search icon in the input */
+.customized-search-input {
+  padding-left: 2rem;
+  background-image: url("/images/icon-search-gray.svg");
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+  background-position: 0.5rem 0.65rem;
+}
+
+.centered-in-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.team-member-photo:hover {
+  cursor: pointer;
+}

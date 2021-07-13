@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pachira - About Us</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/build/tailwind.css">
+  <link rel="stylesheet" href="/build/plp-style.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap">
+</head>
+
+<body id="lpAboutUsPage">
+  <div id="aboutUsPageWrap">
+  <header id="pageHeader"></header>
+
+  <!-- About Us - Start -->
+  <div class="py-10 text-center text-white bg-cover bg-center" style="background-image: url(images/about-us-hold-hands.jpg);">
+    <div class="mt-6 text-2xl font-extrabold">ABOUT US</div>
+    <div class="mt-3 m-auto w-2/3 text-sm font-semibold">
+      <p>Our Mission is to empower giving. Our Vision is a sharing world.</p>
+      <p>Pachira empowers giving, but there must be individual and collective desire to make a difference.</p>
+    </div>
+    <a href="https://portal.pachira.ca" class="mt-6 px-6 py-2 inline-block text-xs font-semibold rounded-md text-white bg-brand-green">JOIN US</a>
+  </div>
+  <!-- About Us - End -->
+
+  <!-- What We Do - Start -->
+  <div class="flex flex-col py-6 sm:flex-row text-left text-white bg-brand-calypso bg-repeat" style="background-image: url(images/p-tree-bg.png);" id="what-we-do-anchor">
+    <div class="sm:w-1/3 m-auto flex justify-center px-4 py-4 sm:py-0 sm:pr-6 text-2xl font-extrabold">
+      WHAT WE DO
+    </div>
+    <div class="sm:w-2/3 px-8 sm:pr-16 text-sm font-semibold sm:border-l-2 border-white">
+      <p class="py-1">Pachira is the first online platform that empowers you, our users, to earn money for charities and social causes.  We hope to inspire you to create the impact and change you want to see in your communities, your world.</p>
+    </div>
+  </div>
+  <!-- What We Do - End -->
+
+  <!-- Our Story - Start -->
+  <div class="flex flex-col py-16 sm:flex-row text-left text-black" id="our-story-anchor">
+    <div class="m-auto md:w-64">
+      <img src="images/jade-story.jpg">
+    </div>
+    <div class="sm:w-2/3 px-16 sm:pr-16 lg:pr-20 mt-8 sm:mt-0 text-sm sm:text-xs lg:text-sm font-normal">
+      <div class="text-2xl font-extrabold">OUR STORY</div>
+      <img class="inline-block -ml-12 mt-2" src="images/quote_open.svg" width="35">
+      <p class="-mt-1">I believe we live in a sharing world. I believe we are all generous. I believe we all want to do good in the world. I have too. That’s why my family and I are alive. Through the good grace and generosity of complete strangers – strangers who felt an innate desire to do good – did good and saved a family, and planted the first Pachira seed.</p><br />
+      <p>Be Kind, Be Generous to each other…you have impact.<img class="inline-block -mt-3 float-right -mr-8 sm:mr-0" src="images/quote_end.svg" width="35"></p><br />
+      <p class="text-sm font-bold">Jade O’Hearn, CEO & Founder</p>
+      <a href="story.html" class="mt-6 px-6 py-1 inline-block text-xs font-semibold rounded-md text-white bg-brand-green">READ MORE</a>
+    </div>
+  </div>
+  <!-- Our Story - End -->
+
+  <!-- Meet Our Team Start -->
+  <div class="pt-12 pb-16 text-center text-black bg-brand-chinchilla" id="meet-our-team-anchor">
+    <div class="m-auto text-2xl font-extrabold">MEET OUR TEAM</div>
+    <!-- Template for team member info -->
+    <template id="team-member-info-template">
+      <div class="w-1/3 px-2 py-4">
+        <img class="w-40 lg:w-48 m-auto rounded-full team-member-photo">
+        <div class="mt-6 py-1 text-lg font-bold"><p class="team-member-name"></p></div>
+        <div class="text-sm"><p class="team-member-title"></p></div>
+      </div>
+    </template>
+    <div class="mt-6 px-2 flex justify-around lg:justify-evenly flex-wrap md:max-w-3/4 lg:max-w-2/3 m-auto" id="teamMemberInfo">
+      <!-- Function addTeamMemberInfo() fills the content -->
+    </div>
+  </div>
+  <!-- Meet Our Team End -->
+
+  <!-- Social Start -->
+  <div class="py-16 text-center bg-white" id="social-peg-anchor">
+    <div class="m-auto text-2xl font-extrabold">#<span class="text-brand-green">PACHIRA</span>EMPOWERGIVING</div>
+    <div class="text-xs">Join the Pachira community by sharing your impact with others.</div>
+    <!-- Template for social thumbnail preview -->
+    <template id="social-thumbnail-template">
+      <img class="social-thumbnail-image">
+    </template>
+    <div class="py-12 grid grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 xl:grid-cols-12 gap-3" id="socialThumbnails">
+      <!-- Function addSocialThumbnails() fills the content -->
+    </div>
+    <div class="text-sm font-semibold">Find more on</div>
+    <div class="pt-3 flex justify-center">
+      <a href="https://www.facebook.com/pachira.empower.giving" target="_blank"><img class="w-8 mx-2 filter-brand-green" src="images/social-facebook.svg"></a>
+      <a href="https://www.instagram.com/pachira.empower.giving/" target="_blank"><img class="w-8 mx-2 filter-brand-green" src="images/social-insta.svg"></a>
+      <a href="https://twitter.com/pachira_empower" target="_blank"><img class="w-8 mx-2 filter-brand-green" src="images/social-twitter.svg"></a>
+      <a href="https://www.linkedin.com/company/pachira-social-enterprise-inc/" target="_blank"><img class="w-8 mx-2 filter-brand-green" src="images/social-linkedin.svg"></a>
+    </div>
+  </div>
+  <!-- Social End -->
+  
+  <!-- Contact Us Start -->
+  <div class="border-brand-spring border-t-8 border-b-8 bg-contain bg-no-repeat bg-brand-gray" style="background-image: url(images/p-logo-contact-us.png);" id="contact-us-anchor">
+    <div class="py-8 mt-6 flex justify-center text-2xl font-extrabold">CONTACT US</div>  
+    <div class="sm:flex sm:flex-row text-sm">      
+      <div class="sm:flex pl-24 sm:pl-0 sm:w-2/5">
+        <div class="sm:w-1/4"></div>
+        <div class="sm:w-3/4 pr-4">
+          <!-- <div class="py-6"><img class="w-5 mr-3 inline-block" src="images/icon-call.svg" />1-800-000-000</div> -->
+          <div class="py-6"><img class="w-5 mr-3 inline-block" src="images/icon-email.svg" />info@pachira.ca</div>
+          <!-- <div class="py-6"><img class="w-5 mr-3 inline-block" src="images/icon-clock.svg" />Mon-Fri 8am-5pm</div> -->
+          <div class="py-6 -mt-2 whitespace-no-wrap"><img class="w-5 mt-2 mr-3 inline-block float-left" src="images/icon-location.svg" />Calgary<br />A Proud Canadian Company</div>
+        </div>
+      </div>
+      <div class="m-auto w-3/4 pb-16 sm:m-0 sm:w-3/5 pt-3 sm:pl-4 sm:pr-20">
+        <input class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal" type="text" placeholder="Name">
+        <input class="mt-2 bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal" type="text" placeholder="Organization Name">
+        <input class="mt-2 bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal" type="email" placeholder="Email">
+        <input class="mt-2 bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal" type="text" placeholder="Phone">
+        <textarea class="mt-2 h-16 bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal" placeholder="Message" wrap="soft"></textarea>
+        <div class="flex justify-center"><a href="#" class="mt-2 px-6 py-1 inline-block text-xs font-semibold rounded-md text-white bg-brand-green">SUBMIT</a></div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact Us End -->
+
+  <footer id="pageFooter"></footer>
+  </div>
+
+  <!-- Template for bio modal -->
+  <template id="team-member-bio-template">
+    <div class="centered-in-window block fixed m-auto w-11/12 sm:w-2/3 bg-brand-chinchilla border-brand-emerald border">
+      <div class="flex justify-end h-12"><img class="w-10 pt-3 pr-3 filter-brand-black team-member-bio-close" src="images/icon-circle-close.svg"></div>
+      <div class="mt-1 pb-8 flex">
+        <div class="w-1/3 px-2 sm:px-1 text-center break-words">
+          <img class="w-32 lg:w-40 m-auto rounded-full team-member-photo">
+          <div class="mt-4 py-1 text-lg font-bold"><p class="team-member-name"></p></div>
+          <div class="text-sm"><p class="team-member-title"></p></div>
+        </div>
+        <div class="w-2/3 pl-4 pr-6 text-sm text-left">
+          <p class="text-lg mt-1 sm:mt-3 font-bold team-member-bio-title"></p><br />
+          <p class="team-member-bio-text"></p><br />
+          <p class="italic team-member-bio-self"></p>
+        </div>
+      </div>
+    </div>
+  </template>
+  <div class="hidden" id="teamMemberBio">
+    <!-- Function onTeamMemberPhotoClick() creates the team member bio modal -->
+  </div>
+
+  <script type="text/javascript" src="scripts/lp.js"></script>
+</body>
+</html>
